@@ -4,13 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff8f6, #f8ecef 55%, #fbf2ee);
+            color: #43353b;
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 36px 24px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        header,
+        section {
+            background-color: #fffdfb;
+            border: 1px solid #f0dce0;
+            border-radius: 14px;
+            margin: 0 auto 20px;
+            max-width: 900px;
+            padding: 26px 30px;
+            box-shadow: 0 8px 24px rgba(83, 48, 62, 0.06);
+        }
+
+        header {
+            background: linear-gradient(120deg, #f0dce2, #ead3dc);
+            border: 0;
+            border-bottom: 4px solid #dfb9b5;
+            color: #593e49;
+            min-height: 190px;
+            padding-right: 190px;
+            position: relative;
+            text-align: left;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 0.04em;
+            margin: 0 0 10px;
+        }
+
+        header nav a {
+            color: #694957;
+        }
+
+        .profile-image {
+            border: 3px solid #fffdfb;
+            border-radius: 50%;
+            height: 150px;
+            object-fit: cover;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 150px;
+            box-shadow: 0 4px 14px rgba(63, 37, 49, 0.12);
+        }
+
+        nav {
+            line-height: 2.2;
+        }
+
+        nav a {
+            color: #805568;
+            margin: 0 7px 0 0;
+            text-decoration-color: transparent;
+            text-underline-offset: 4px;
+            transition: text-decoration-color 160ms ease;
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            text-decoration-color: currentColor;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #efd6d5;
+            color: #754f60;
+            font-size: 1.45rem;
+            margin-top: 0;
+            padding-bottom: 10px;
+        }
+
+        #prof h2 {
+            border: 0;
+            font-size: 1.8rem;
+            margin-bottom: 2px;
+            padding-bottom: 0;
+        }
+
+        #prof p {
+            color: #806d74;
+            font-size: 1.05rem;
+            margin-top: 0;
+        }
+
+        main {
+            margin: 0 auto;
+            max-width: 940px;
+        }
+
+        article {
+            background: #fcf4f3;
+            border-left: 3px solid #dfb9b5;
+            border-radius: 0 8px 8px 0;
+            margin: 14px 0;
+            padding: 12px 18px;
+        }
+
+        article h3 {
+            color: #755563;
+            margin: 0 0 6px;
+        }
+
+        article p {
+            margin: 6px 0;
+        }
+
+        ul {
+            margin-bottom: 0;
+            padding-left: 22px;
+        }
+
+        li {
+            margin: 4px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            header,
+            section {
+                padding: 20px;
+            }
+
+            header {
+                min-height: 0;
+                padding: 116px 20px 20px;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .profile-image {
+                height: 92px;
+                right: calc(50% - 46px);
+                top: 14px;
+                width: 92px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 0 4px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1 align="center">Resume</h1>
+        <img class="profile-image" src="profile-image.png" alt="Profile photo of Anushya J">
+        <h1>Resume</h1>
         <nav aria-label="Resume sections">
             <a href="#prof">Profile</a> |
             <a href="#edu">Education</a> |
+            <a href="#internship">Internship</a> |
             <a href="#ph">Phone Number</a> |
             <a href="#email">Email</a> |
             <a href="#linkedin">LinkedIn</a> |
@@ -41,6 +210,17 @@
                 <p>Velammal Matriculation Higher Secondary School</p>
             </article>
         </section>
+        <section id="internship">
+            <h2>Internship</h2>
+            <article>
+                <h3>GLOBESCI - Web Development</h3>
+                <p>Completed a 1-month offline internship in Web Development.</p>
+            </article>
+            <article>
+                <h3>Approtech - Artificial Intelligence</h3>
+                <p>Completed a 1-month online internship in Artificial Intelligence.</p>
+            </article>
+        </section>
 
         <section id="ph">
             <h2>Phone Number</h2>
@@ -53,7 +233,7 @@
 
         <section id="linkedin">
             <h2>LinkedIn</h2>
-            <p>www.linkedin.com/in/anushyaj</p>
+            <p>www.linkedin.com/in/anushya-75b537382</p>
         </section>
         <section id="lang">
             <h2>Languages Known</h2>

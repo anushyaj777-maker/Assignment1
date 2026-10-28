@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <title>javascript counter</title>
+</head>
+<body>
+    <h2>Counter: <span id="count">0</span></h2>
+    <button id="sum">Sum</button>
+    <button id="difference">Difference</button>
+    <button id="multiplication">Multiplication</button>
+    <button id="division">Division</button>
+    <button id="reset">Reset</button>
+    <script>
+        let a= 20;
+        let b= 5;
+              
+        let count = 0;
+        let diff=0;
+        let mul=0;
+        let div=0;
+
+
+        function Sum() {
+            count = a + b;
+            document.getElementById("count").innerText = count;
+        }
+
+        function Difference() {
+            diff = a - b;
+            document.getElementById("count").innerText = diff;
+        }
+         
+        function Multiplication() {
+            mul = a * b;
+            document.getElementById("count").innerText = mul;
+        }
+
+        function Division() {
+            div = a / b;
+            document.getElementById("count").innerText = div;
+        }
+        function reset() {
+            count = 0;
+            diff = 0;
+            mul = 0;
+            div = 0;
+            document.getElementById("count").innerText = count;
+        }
+
+        document.getElementById("sum").addEventListener("click", Sum);
+        document.getElementById("difference").addEventListener("click", Difference);
+        document.getElementById("multiplication").addEventListener("click", Multiplication);
+        document.getElementById("division").addEventListener("click", Division);
+        document.getElementById("reset").addEventListener("click", reset);
+    </script>
+</body>     
+</html>
